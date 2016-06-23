@@ -89,8 +89,32 @@ function subtract(x,y){
  * @param {number} y
  * @return {number} the result
  */
- 
+function calculate(operation, x, y){
+  if (operation == 'add'){
+  var result = (x + y);
+  console.log(x + ' + ' + y + ' = ' + result);
+  return (x+y);
+  }
 
+  if (operation == 'subtract'){
+  var result = (x - y);
+  console.log(x + ' - ' + y + ' = ' + result);
+  return (x-y);
+  }
+
+  if (operation == 'multiply'){
+  var result = (x * y);
+  console.log(x + ' * ' + y + ' = ' + result);
+  return (x*y);
+  }
+
+  if (operation == 'divide'){
+  var result = (x / y);
+  console.log(x + ' / ' + y + ' = ' + result);
+  return (x/y);
+  }
+}
+calculate ('add', 4, 7);
 
 
 /**
@@ -99,6 +123,10 @@ function subtract(x,y){
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+ function isGreaterThan(a, b){
+ 	return (a>b);
+ }
+
 
 
 /**
@@ -107,6 +135,9 @@ function subtract(x,y){
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
+ function isLessThan(a, b){
+ 	return (a<b);
+ }
 
 
 /**
@@ -115,7 +146,9 @@ function subtract(x,y){
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+  function areEqual(a, b){
+ 	return (a === b);
+ }
 
 /**
  * Returns the smallest value of two numbers.
@@ -123,6 +156,14 @@ function subtract(x,y){
  * @param {number} y
  * @return {number} the smallest number
  */
+  function minimum(value, x, y){
+  	if (value == x > y){
+  	return (y);
+	}
+  	if (value == x < y){
+  	return (x);
+	}
+}
 
 
 /**
