@@ -156,13 +156,13 @@ calculate ('add', 4, 7);
  * @param {number} y
  * @return {number} the smallest number
  */
-  function minimum(value, x, y){
-  	if (value == x > y){
-  	return (y);
+  function minimum(x, y){
+  	if (x > y){
+  	return y
 	}
-  	if (value == x < y){
-  	return (x);
-	}
+  	else{
+  	return x
+  	}
 }
 
 
@@ -172,6 +172,14 @@ calculate ('add', 4, 7);
  * @param {number} y
  * @return {number} the largest number
  */
+   function maximum(x, y){
+  	if (x < y){
+  	return y
+	}
+  	else{
+  	return x
+  	}
+}
 
 
 /**
@@ -179,6 +187,15 @@ calculate ('add', 4, 7);
  * @param {number} n
  * @return {boolean} the number is even
  */
+ function isEven(n){
+ 	if (n % 2 == 0){
+ 		return true
+ 	}
+ 	else{
+ 		return false
+ 	}
+ }
+
 
 
 /**
@@ -186,6 +203,14 @@ calculate ('add', 4, 7);
  * @param {number} n
  * @return {boolean} the number is odd
  */
+  function isOdd(n){
+ 	if (n % 2 == 0){
+ 		return false
+ 	}
+ 	else{
+ 		return true
+ 	}
+ }
 
 
 /**
@@ -199,6 +224,29 @@ calculate ('add', 4, 7);
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+ function letterGrade(score, total_maximum_possible_score){
+ 	var percentage = (score / total_maximum_possible_score)
+ 	if (percentage >= .90 && percentage < 1){
+ 		return 'A'
+ 	}
+
+ 	 if (percentage >= .80 && percentage < .90){
+ 		return 'B'
+ 	}
+
+ 	if (percentage >= .70 && percentage < .80){
+ 		return 'C'
+ 	}
+
+ 	 if (percentage >= .60 && percentage < .70){
+ 		return 'D'
+ 	}
+
+ 	 else{
+ 		return 'F'
+ 	}
+ }
+
 
 
 /**
